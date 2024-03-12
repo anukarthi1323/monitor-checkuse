@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #081b29;
+    color: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .header{
+    position:fixed;
+    top:0;
+    left:10;
+    width:100%;
+    padding:20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .3s;
+    justify-content: space-between;
+}
+.home-content{
+    
+    max-width:600px;
+    margin-left: auto;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring{
+    width: 200px;
+    height: 200px;
+    border: 4px solid #081b29;
+border-radius: 50%;
+position: absolute;
+
+}
+.ring:nth-child(1){
+    border-bottom-width:8px;
+    border-color: rgb(255,0,255);
+    animation: rotate 2s linear infinite;
+}
+
+.ring:nth-child(2){
+    border-right-width:8px;
+    border-color: rgb(0,255,13);
+    animation: rotate3 2s linear infinite;
+}
+.ring:nth-child(3){
+    border-right-width:8px;
+    border-color: rgb(0,247,255);
+    animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate2{
+    0%{
+
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate3{
+    0%{
+
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+        <header class="header">
+            <a href="#" class="logo">Monitor</a>
+            <nav class="navbar">
+                <a href="pg3.html">Smoke</a>
+                <a href="pg3.html">Temperature</a>
+                <a href="pg3.html">Voltage</a>
+                <a href="pg3.html">Humidity</a>
+                <a href="pg3.html"></a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <div class="container">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+    
+                </div>
+    
+                
+                </div>
+                </section>
+
+</body>
+</html>
